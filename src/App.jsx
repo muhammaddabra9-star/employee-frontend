@@ -1,9 +1,7 @@
 
 import { useState, useEffect } from 'react'
 import './App.css'
-
-const API = import.meta.env.VITE_API_URL || 'http://localhost:8080/api'
-
+const API = 'https://employeemanagementsystemrestapi.onrender.com/api'
 function App() {
   const [page, setPage] = useState('Dashboard')
   const [employees, setEmployees] = useState([])
